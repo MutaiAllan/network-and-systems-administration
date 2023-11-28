@@ -9,7 +9,7 @@ client_socket.connect(server_address)
 print("Connected to {}:{}".format(*server_address))
 
 # Send a request to the server
-request = "Hello, server! How are you?"
+request = "This is a message from client"
 client_socket.send(request.encode('utf-8'))
 print("Sent request to server: {}".format(request))
 

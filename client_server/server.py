@@ -21,7 +21,7 @@ data = client_socket.recv(1024)
 print("Received data from client: {}".format(data.decode('utf-8')))
 
 # Send a response back to the client
-response = "Hello, client! I received your request."
+response = "Hello, client! This is the server."
 client_socket.send(response.encode('utf-8'))
 
 # Close the connection
